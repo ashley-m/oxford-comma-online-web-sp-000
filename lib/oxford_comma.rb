@@ -6,7 +6,7 @@ def oxford_comma(array)
   when 2
     return array.join(" and ")
   else
-    temp="and"
+    temp="and "
     temp<<array.pop
     array<<temp
     array.join(", ")
