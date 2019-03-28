@@ -7,7 +7,7 @@ def oxford_comma(array)
     return array.join(" and ")
   else
     temp=array.pop
-    array<<"and"
+    temp.unshift("and ")
     array<<temp
     array.join(", ")
   end
